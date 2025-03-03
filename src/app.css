@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --theme-bg: 0deg 0% 0%;
+    --theme-bg-2: 210deg 0% 18%;
+		--theme-text: 220deg 3% 72%;
+		--theme-accent: 89deg 100% 70%;
+  }
+}
+
+html {
+		@apply scroll-smooth; 
+}
+
+body {
+  @apply mx-auto bg-base text-text;
+}
+
+.prose * {
+  @apply text-text;
+}
+
+.prose a {
+  @apply text-accent;
+}
+
+@layer components {
+  .prose {
+    @apply text-text;
+    @apply prose-a:underline prose-pre:bg-base-2 prose-code:bg-base-2 prose-code:before:content-none prose-code:after:content-none prose-code:p-0.5 prose-code:rounded;
+
+    @apply mx-auto;
+  }
+}

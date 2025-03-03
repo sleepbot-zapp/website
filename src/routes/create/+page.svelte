@@ -19,8 +19,6 @@
     converter.setOption("tasklists", true);
     converter.setOption("emoji", true);
     converter.setOption("underline", true);
-
-    // for live preview
     converter.setOption("smoothLivePreview", true);
   });
 
